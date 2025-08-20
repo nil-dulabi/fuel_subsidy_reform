@@ -22,7 +22,7 @@ import io
 @st.cache_data
 def load_iran_data():
     df_Iran = pd.read_excel("Iran_Fuel_Subsidy_Reform_2005_2022.xlsx")
-    return df
+    return df_Iran
 
 def load_indonisa_data():
     df_indo=pd.read_excel("Indonesia_Fuel_Subsidy_Reform_2005_2022.xlsx")
