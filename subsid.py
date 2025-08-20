@@ -22,17 +22,6 @@ import io
 @st.cache_data
 def load_iran_data():
     df_Iran = pd.read_excel("Iran_Fuel_Subsidy_Reform_2005_2022.xlsx")
-    presidents = {
-        (2005, 2012): "Ahmadinejad",
-        (2013, 2020): "Rouhani",
-        (2021, 2022): "Raisi"
-    }
-    def get_president(year):
-        for (start, end), name in presidents.items():
-            if start <= year <= end:
-                return name
-        return "Unknown"
-    df['President'] = df['Year'].apply(get_president)
     return df
 
 def load_indonisa_data():
