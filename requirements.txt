@@ -1,5 +1,6 @@
 pandas
 streamlit
+openpyxl
 plotly
 streamlit-option-menu
 scikit-learn
