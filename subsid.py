@@ -82,10 +82,10 @@ with st.sidebar:
 
 
 # ============================== PAGE CONTENT IRAN ===============================
-df_Iran = load_iran_data()
-st.dataframe(df_Iran)
+
 
 if country == "Iran":
+    df_Iran = load_iran_data()
 
     if iran_page == "Overview":
         st.title("Iran Fuel Subsidy Reform Dashboard (2005-2022) - Overview")
@@ -303,7 +303,6 @@ st.caption("Data: Real indicators from 2005–2022")
 
 # ============================== PAGE CONTENT INDONISIA ===============================
 df_indo=load_indonisa_data()
-st.dataframe(df_indo)
 
 if country == "Indonesia":
 
@@ -546,7 +545,6 @@ if country == "Indonesia":
 
 # ============================== PAGE CONTENT Mexico ===============================
 df_Mx=load_Mexico_data()
-st.dataframe(df_Mx)
 
 if country == "Mexico":
 
@@ -795,7 +793,7 @@ if country == "Mexico":
         
 #=======================================Nigeria=============================================================
 df_Ng=load_Nigeria_data()
-st.dataframe(df_Ng)
+
 if country == "Nigeria":
 
     if Ng_page == "Overview":
@@ -1041,7 +1039,7 @@ if country == "Nigeria":
 
 #=======================================Egypt=============================================================
 df_Eg=load_Egypt_data()
-st.dataframe(df_Eg)
+
 if country == "Egypt":
 
     if Eg_page == "Overview":
